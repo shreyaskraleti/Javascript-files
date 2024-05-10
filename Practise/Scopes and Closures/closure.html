@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+
+    <h2>JS Closure Concept: </h2>
+    <button onclick="bankAccount()">Click</button>
+
+
+    <script>
+
+        // closure - inner function has the ability to access outer function.
+
+     /*   function outer() {
+            var a = 10;
+
+            function inner() {
+                return a;
+
+            }
+            return inner;
+        }
+
+        var b = outer();
+        console.log(b()); 
+
+        // with parameters
+
+        function outer(a) {
+
+            function inner(b) {
+                return a+b;
+            }
+            return inner;
+        }
+        var x = outer(5);
+        console.log(x(2)); 
+
+        // if variable is declared inside outer function the balance value will be constant.
+        function bankAccount() {
+            var balance = 1000;
+
+            function currentBalance() {
+                balance = balance-100;
+                alert("your current balance is:" + balance);
+            }
+            currentBalance()
+        } */
+
+ // if variable is declared outside function then balance value will be deducted each and every time.
+        var balance = 1000;
+        function bankAccount() {
+            function currentBalance() {
+                balance = balance-100;
+                alert("your current balance is:" + balance);
+            }
+            currentBalance()
+        }
+
+
+    </script>
+        
+    
+    
+</body>
+</html>
