@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bind method</title>
+</head>
+<body>
+
+    <script>
+
+    
+    let name = {
+        firstname: "shreya",
+        lastname: "nouduri",
+    }
+
+    let printFullName = function(hometown,state) {
+        console.log(this.firstname+ " " +this.lastname+ " from " +hometown+ " " +state);
+    
+    }
+
+    let printname = printFullName.bind(name,"hyderabad","telangana");
+    console.log(printname); // in bind method it will not directly give the output but it will return the function.
+
+    let name2 = {
+        firstname: "shreya",
+        lastname: "kraleti",
+    }
+
+    let printname2 = printFullName.bind(name2,"bangalore","karnataka");
+    console.log(printname2);
+
+    // bind method is used to bind the function with object
+
+    </script>
+    
+</body>
+</html>

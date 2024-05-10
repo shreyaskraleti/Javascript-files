@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+</head>
+<body>
+    <script>
+        // filter method
+
+        const a = [1,2,3,4,5,6,7,8,9,10];
+        const even = a.filter(function(i) {
+            return i%2 == 0;
+        });
+        console.log(even);
+
+        const b = [1,2,3,4,5,6,7,8,9,10];
+        const odd = b.filter(function(j) {
+            return j%2!=0;
+        });
+        console.log(odd);
+
+        // filter method using arrow function
+
+        const c = [1,2,3,4,5,6,7,8,9,10];
+        const d = c.filter(k=>k%2==0);
+        console.log(d);
+
+        const e = [1,2,3,4,5,6,7,8,9,10];
+        const f = e.filter(l=>l%2!=0);
+        console.log(f);
+
+        // using length and arrow function
+
+        const animal = ['cat','dog','elephant','tiger'];
+        const animal2 = animal.filter(s=>s.length>3);
+        console.log(animal2);
+
+        const veggies = ['potato','onion','tomato'];
+        const veggies2 = veggies.filter(t=>t.length>5);
+        console.log(veggies2);
+        
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

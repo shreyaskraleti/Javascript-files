@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+#total, #remaining {
+    margin-right: 10px;
+}
+
+#total {
+    margin-right: auto;
+}
+
+
+
+.container {
+    height: 250px;
+    width: 450px;
+    background-color: pink;
+    padding: 20px;
+    border-radius: 10px;
+    align-content: center;
+    text-align: center;
+    color: black;
+}   
+
+.character-count {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+
+

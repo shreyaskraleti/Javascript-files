@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=za, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function is created one time and we can call as many times as possible
+        
+        function add(a,b){
+            console.log(a+b);
+        }
+        //call the function
+        add(2,3);
+
+        //function is created
+        function gstCalc() {
+            let price=500;
+            let gp=10;
+            let totalPrice=price+(price*gp/100);
+            console.log(totalPrice);
+        }
+
+        //call the function
+        gstCalc();
+        gstCalc();
+        gstCalc();
+
+        //creating and calling the function in a better way
+
+        function gst(p, gp) {
+            let tp = p + (p * gp / 100);
+            console.log(tp);
+        }
+
+        gst(400,18);
+        gst(5000,18);
+
+        //function with return statement
+
+        function gst(p,gp) {
+            let tp=p+(p*gp/100);
+            return tp;
+        }
+
+        let tp1=gst(500,10);
+        let tp2=gst(5000,20);
+        console.log(tp1,tp2);
+
+        console.log(gst(500,10));
+        console.log(gst(5000,20));
+        console.log(gst(200,20));
+        document.write(gst(600,15) +"</br>"); 
+        document.write(gst(200,10) + "</br>");
+
+        //function without parameters
+
+        function greet() {
+            console.log("Hello World!!! Welcome to Shivarathri celebrations.");
+        }
+        greet();
+
+        //function with parameters
+
+        function addn(a,b){
+            console.log(a+b);
+        }
+        addn(2,8);
+
+        function sub(r,s) {
+            console.log(r-s);
+        }
+        sub(10,2);
+
+        //function with name
+
+        function greet(name) {
+            console.log("hello "+name+" how are you?");
+        }
+        greet("Shiva");
+
+        //function with return statement
+
+        function sub(y,z) {
+            return y-z;
+        }
+        console.log(sub(10,3));
+        document.write(sub(5,3)+"</br>");
+        document.write(sub(10,3)+"</br>");
+        console.log(sub(3,2));
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

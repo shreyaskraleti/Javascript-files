@@ -1,0 +1,32 @@
+
+div {
+    border: 2px solid blue;
+    width: 210px;
+    padding: 80px;
+    margin: 50px 130px;
+    border-radius: 20px;
+
+}
+
+h1 {
+    color: blue;
+}
+
+form input {
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+form label, input {
+    margin: 5px;
+}
+
+.mandatory {
+    color: red;
+}
+
+.dNone {
+    color: red;
+    display: none;
+}

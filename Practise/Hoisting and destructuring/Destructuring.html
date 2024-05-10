@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+        // 1. array destructuring
+
+        var arr = [10,20,30,40,50];
+        console.log(arr);
+
+        let [a,b,c,d,e] = arr;
+        console.log(a,b,c,d,e);
+
+        let [l, ,n, ,p] = arr;
+        console.log(l,n,p);
+
+        let [q,r, ,t,u] = arr;
+        console.log(q,r,t,u);
+
+        const fruits = ["apple", "banana", "mango"];
+
+        let [g,h,i] = fruits;
+        console.log(g,h,i);
+
+        let [j,k] = fruits;
+        console.log(j,k);
+
+        let [, w, ] = fruits;
+        console.log(w);
+
+        // 2. object destructing
+
+        let obj = {
+            name: "shreya",
+            age: 30,
+            address: "bangalore"
+        }
+
+        console.log(obj);
+
+        let {name:x, age:y, address:z} = obj;
+        console.log(x,y,z); // alias method i.e giving alternate name
+
+        let {name, age, address} = obj; // object destructing using keys
+        console.log(name, age, address);
+
+        let person = {
+            nam: "phani",
+            ag: 32,
+            add: "bangalore"
+        }
+
+        let {nam, ag, add} = person; // using keys
+        console.log(nam, ag, add);
+
+        let {nam:m, ag:v, add:o} = person; //alias method
+        console.log(m,v,o);
+
+       
+       
+
+    </script>
+    
+</body>
+</html>

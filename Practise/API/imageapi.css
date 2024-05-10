@@ -1,0 +1,19 @@
+
+div {
+    border: 1px solid red;
+    height: 400px;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+   
+   
+    
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+}

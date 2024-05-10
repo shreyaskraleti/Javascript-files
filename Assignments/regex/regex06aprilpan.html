@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="pan">Pan Number:</label>
+    <input type="text" name="pan" id="pan" placeholder="Enter your PAN number">
+    <button onclick="validatePan()">Verify</button>
+
+    <script>
+
+        function validatePan() {
+            const panInput = document.getElementById('pan').value;
+            const panRegex = /^[A-Z]{5}[0-9]{4}[A-Z]$/
+
+            if(!panRegex.test(panInput)) {
+                document.getElementById('pan').style.border = "1px solid red";
+            } else {
+                document.getElementById('pan').style.border = "1px solid green";
+            }
+        }
+    </script>
+
+
+    
+</body>
+</html>

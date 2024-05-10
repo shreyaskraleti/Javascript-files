@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Form</title>
+</head>
+<body>
+    <script>
+        class RailwayForm {
+            // fill(givenname,trainno) {
+             //   this.name = givenname; // we can take as name instead of givenname with this keyword
+             //   this.trainno = trainno;
+        //    }
+
+        constructor(givenname,trainno,address) {
+            console.log("Constructor called");
+            this.name = givenname;
+            this.trainno = trainno;
+            this.address = address;
+
+        }
+
+        preview() {
+            alert(this.name+" : you are booking train ticket successfully for train no: "+this.trainno+" for the destination address: "+this.address+" do you want to proceed?")
+
+        }
+        submit() {
+            alert(this.name+" : your ticket has been submitted for train no: "+this.trainno+" for the destination address: "+this.address);
+            }
+
+        cancel() {
+            alert(this.name+": your ticket has been cancelled for train no: "+this.trainno);
+            }
+        }
+
+        //creating a form for shreya
+
+        let shreyaForm = new RailwayForm("shreya", 12350, "hyderabad");
+        shreyaForm.preview();
+        shreyaForm.submit();
+        shreyaForm.cancel();
+
+        let phaniForm = new RailwayForm("phani", 12050, "bhuvaneshwar");
+        phaniForm.preview();
+        phaniForm.submit();
+        phaniForm.cancel();
+        
+
+
+
+    </script>
+    
+</body>
+</html>

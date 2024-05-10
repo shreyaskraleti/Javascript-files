@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+    <link rel="stylesheet" href="basic.css">
+</head>
+<body>
+    
+    
+    <form>
+    <h2>Login Form:</h2>
+    <label for="userid">User Id:</label>
+    <input type="text" name="userid" id="userid" placeholder="Enter your User id:">
+    <span class="dNone" id="Uerror">Please enter User Id Details !!!</span>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" placeholder="Enter your Password:">
+    <span class="dNone" id="Perror">Please enter Password Details !!!</span>
+    <br>
+    <input type="button" name="login" id="login" value="Login">
+   
+    </form>
+
+    <script>
+        document.getElementById('login').addEventListener('click',function() {
+            let Usr = document.getElementById('userid').value;
+            let Pswd = document.getElementById('password').value;
+
+            if(Usr==="") {
+               document.getElementById('Uerror').style.display = "block";
+            } else {
+                document.getElementById('Uerror').style.display = "none";
+            }
+
+            if(Pswd==="") {
+                document.getElementById('Perror').style.display = "block";
+            } else {
+                document.getElementById('Perror').style.display = "none";
+
+            }
+
+            if(Usr!="" && Pswd!="") {
+                alert("User Logged In Successfully !!!");
+            }
+        });
+
+            
+    </script>
+    
+    
+</body>
+</html>

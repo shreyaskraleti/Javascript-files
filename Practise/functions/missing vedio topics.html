@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions Document</title>
+</head>
+<body>
+
+    <script>
+
+        //function with default parameters
+
+        function greet(name = 'shreya') {
+            console.log(`Hello ${name}`);
+        }
+
+        greet();
+
+        function greeting(name = 'bonkers') {
+            console.log(`How are you ${name}?`);
+        }
+
+        greeting();
+
+        //calling with argument
+
+        function greets(name='Anonymous') {
+            console.log(`Hi ${name}`);
+        }
+
+        greets('Phani');
+
+        function hey(name='Anonymous') {
+            console.log(`How are you ${name}`);
+        }
+
+        hey('shreya');
+ 
+        //anonymous function - assigning an anonymous function to a variable and calling the anonymous function through variable
+
+        let x = function(a,b) {
+            return(a+b);
+        }
+        console.log(x(2,3));
+
+        let y = function(c,d) {
+            return(c-d);
+        }
+        console.log(y(14,6));
+
+        // calling tha anonymous function through variable
+
+        let result = x(2,4);
+        console.log(result);
+
+        let results = y(10,5);
+        console.log(results);
+
+        // variable function - without function name, without parameters in below example and assigned to a variable
+
+        let z = function() {
+            console.log("Hello Everyone, we are going to celebrate mahashivarathri with sadguru!");
+        }
+        z();
+
+        let s = function() {
+            console.log("Hey How are you Bonkers?");
+        }
+        s();
+
+        
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

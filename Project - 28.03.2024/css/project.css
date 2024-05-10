@@ -1,0 +1,64 @@
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url("../assets/pexels-pixabay-60597.jpg");
+    background-size: cover;
+    overflow: hidden;
+}
+
+h2 {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    align-items: center;
+    
+}
+
+.clock {
+    display: flex;
+}
+
+.clock div {
+    margin: 5px;
+    position: relative;
+    
+}
+
+.clock span {
+    width: 100px;
+    height: 80px;
+    background-color: blueviolet;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+
+}
+
+.clock .text {
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    background-color: rgb(67,28,105);
+
+}
+
+.clock #ampm {
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    width: 60px;
+    height: 40px;
+    background-color: green;
+    color: white;
+
+}
+

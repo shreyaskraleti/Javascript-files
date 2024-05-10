@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions Part-3 Document</title>
+</head>
+<body>
+    <script>
+
+
+        //call back function - function is passed as an argument to another function
+        //setimeout will callback the function after 4seconds
+
+        setTimeout(function(){
+            console.log("Delay message!");
+        },4000);
+//ex2
+        function dosomething(parameter) {
+            console.log("Iam doing something");
+            parameter()
+        }
+
+        function sayHello() {
+            console.log("Hello World");
+        }
+
+        dosomething(sayHello); //function is passed as an argument to another function
+
+        //nested function - function inside function
+
+        function outer() {
+            let x = "iam outer function";
+
+            function inner() {
+                console.log(x);
+            }
+            inner();
+        }
+            outer();
+
+        // recursive function
+
+        function factorial(n) {
+            if(n==0) {
+                return 1;
+            } else {
+                return n*factorial(n-1);
+            }
+        }
+        console.log(factorial(5));
+        console.log(factorial(4));
+        console.log(factorial(6));
+        console.log(factorial(7));
+
+        // IIFA - Immediately invoked function expression
+
+        (function () {
+            console.log("IIfa is called");
+        })
+        ();
+
+        // arrow function - code in one single line - curly braces are required only if we use return
+
+        const addn = (a,b)=>{return a+b};
+        console.log(addn(2,3));
+
+        const sub = (x,y)=>{return x-y};
+        console.log(sub(9,5));
+
+        let multi = (c,d)=>{return c*d};
+        console.log(multi(2,5));
+
+        let gstCalc = (p,gp)=>{return p+(p*gp/100)};
+        console.log(gstCalc(500,20));
+
+        //without return statement - curly braces are not used 
+
+        let addition = (a,b)=>(a+b);
+        console.log(addition(2,8));
+
+        let subt = (r,s)=>(r-s);
+        console.log(subt(10,2));
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Document</title>
+</head>
+<body>
+
+    
+
+        <form>
+            <input type="button" name="my-button" value="Button!" id="my-button">
+        </form>
+
+        <script>
+            //mouse events - events attached with mouse
+
+            //click - when we click
+
+            const mybutton = document.querySelector('#my-button');
+            console.log(mybutton);
+
+            mybutton.addEventListener('click',function(){
+                alert("You clicked the button");
+            })
+            
+
+
+        </script>
+
+
+
+
+   
+    
+</body>
+</html>

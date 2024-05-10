@@ -1,0 +1,28 @@
+input {
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    width: 60%;
+    margin-left: 25%; 
+}
+
+h2 {
+    text-align: center;
+}
+
+.error-msg {
+    color: red;
+    font-size: smaller;
+    margin-left: 40%;
+    display: none;
+}
+
+#submit {
+    width: 100px;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin-left: 25%;
+}

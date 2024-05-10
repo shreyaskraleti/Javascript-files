@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting and Destructuring</title>
+</head>
+<body>
+
+    <script>
+        // 1. variable hoisting
+
+      //  console.log(x);
+      // var x;  // output - undefined
+
+      // console.log(y);
+     //  let y;  // output - error without initializing a value
+
+     //  console.log(z);
+      // const z;  // output - missing initialization error in const declaration
+
+      var t = 10;
+      console.log(t);
+
+       a = 20;  // variable hoisting - variable declarations are moved to the top but not initialization
+       console.log(a);
+       var a;
+
+       b = 30;
+       console.log(b);
+       var b;
+
+       // 2. function hoisting - function declarations are moved to the top
+
+       greet(); // calling the function
+
+       function greet() {    // declaring the function
+        console.log("Hello All");
+       }
+
+       function greet1() {
+        console.log("Hello World");
+       }
+
+       greet1();
+
+       // function hoisting applies to only function declarations not to function expressions
+
+       sayHello();
+
+       var sayHello = function() {
+        console.log("this is a function expression and hoisting is not applicable");
+       }  
+
+       // output - sayHello is not a function
+
+        // console.log(team);
+      //  let team = 20; // output - reference error - cannot access team before initialization - let there is no hoisting
+
+      // console.log(kat);
+      //  const kat = 12; // output - reference error - cannot access kat before initialization - const there is no hoisting
+
+      //  console.log(tata);
+       // var tata = 35; // undefined
+       // console.log(tata); // 35
+
+        // sky = 50;
+        // console.log(sky);
+        // var sky;   // - output - 50
+
+       // let age1 = 20;
+      //  console.log(age1); // output - 20
+
+      // const age2 = 35;
+//   console.log(age2); // output - 35
+
+
+
+
+    </script>
+    
+</body>
+</html>

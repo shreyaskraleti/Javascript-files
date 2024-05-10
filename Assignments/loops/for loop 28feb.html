@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop Document</title>
+</head>
+<body>
+    <select name="Date" id="Date"></select>
+    <select name="Month" id="Month"></select>
+    <select name="Year" id="Year"></select>
+
+    <script>
+        var date= "<option>Date</option>";
+        for(i=1; i<=31; i++) {
+            date+="<option value="+i+">"+i+"</option>";
+        }
+        document.getElementById("Date").innerHTML=date;
+
+        var month="<option>Month</option>";
+        for(j=1; j<=12; j++) {
+            month+= "<option value= "+j+">"+j+"</option>";
+
+        }
+        document.getElementById("Month").innerHTML=month;
+
+        var year="<option>Year</option>";
+        for(k=1990; k<=2023; k++) {
+            year+= "<option value= "+k+">"+k+"</option>";
+
+        }
+        document.getElementById("Year").innerHTML=year;
+        
+        
+        </script>
+
+    
+
+    
+    
+
+
+
+
+</body>
+</html>

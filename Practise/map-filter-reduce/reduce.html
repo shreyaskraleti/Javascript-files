@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce</title>
+</head>
+<body>
+    <script>
+
+        // reduce method 
+
+        const a = [1,2,3,4,5];
+        const sum = a.reduce(function(i, num) {
+            return i*num;
+        });
+
+        console.log(sum);
+
+        const b = [1,2,3,4,5];
+        const mul = b.reduce(function(j, number) {
+            return j*number;
+        },2);
+
+        console.log(mul);
+
+        const c = [1,2,3,4,5];
+        const add = c.reduce(function(k, numb) {
+            return k+numb;
+        },1);
+
+        console.log(add);
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

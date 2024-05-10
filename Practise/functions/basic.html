@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions Basics</title>
+</head>
+<body>
+    <script>
+
+        // named function or basic function - with function name
+
+        function sum(num1,num2) {
+            var result = num1+num2;
+            return result;  
+        
+        }
+
+        console.log(sum(2,3));
+        document.write(sum(10,20));
+        document.write("<br>result of 50,20 is:" + sum(50,20));
+
+        // function expression - assigning to a variable
+
+        var add = function sum(num1,num2) {
+            var result = num1+num2;
+            return result;
+        }
+
+        console.log(add(2,5));
+        console.log(add(10,30));
+
+        // anonymous function - without function name
+
+        var sum = function(num1,num2) {
+            var result = num1+num2;
+            return result;
+        }
+
+        console.log(sum(2,4));
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors Document</title>
+    <style>
+        .box{
+            color: black;
+            background-color: aqua;
+            border: 2px solid red;
+            padding: 20px;
+            margin: 10px;
+        }
+
+
+
+    </style>
+   
+    
+</head>
+<body>
+    
+    
+    <div class="div1"> HTML </div>
+    <section id="sec1"> CSS </section>
+    <div class="div1"> JS </div>
+    <section id="sec2"> ReactJS </section>
+    <nav> Navigation </nav>
+   
+
+
+    <script>
+        //getElementsByTagName() - you have to pass index value to style the tag
+
+      //  console.log(document.getElementsByTagName('div'));
+       // console.log(document.getElementsByTagName('div')[0]);
+       // console.log(document.getElementsByTagName('div')[1]);
+
+       // document.getElementsByTagName('div')[0].style.border = "2px solid red";
+      //  document.getElementsByTagName('div')[1].style.border = "2px solid brown";
+//        document.getElementsByTagName('div')[0].style.background = "aqua";
+      //  document.getElementsByTagName('div')[1].style.background = "pink";
+      //  document.getElementsByTagName('div')[0].style.color = "black";
+       // document.getElementsByTagName('div')[0].style.padding = "20px";
+
+        //classList - 
+        // document.getElementsByTagName('section')[0].classList = "box";
+       // document.getElementsByTagName('section')[1].classList = "box";
+
+      //  console.log(document.getElementsByTagName('section')[0]);
+      //  console.log(document.getElementsByTagName('section')[1]);
+
+       // let list = document.getElementsByTagName("section");
+     //   console.log(list);
+
+     //   for(let i=0; i<list.length; i++) {
+    //        list[i].classList = "box";
+     //   }
+
+        // getElementsByClassName() -
+       // console.log(document.getElementsByClassName('box'));
+
+       // let list2=document.getElementsByClassName('box');
+      //  console.log(list2);
+
+     //   for(let i=0; i<list2.length; i++) {
+     //       list2[i].style.background = "pink";
+      //  }
+
+      //  list2[0].style.color = "brown";
+
+        //getElementById() - 
+
+      //  console.log(document.getElementById('sec1'));
+    //    console.log(document.getElementById('sec2'));
+
+      //  document.getElementById('sec1').classList = "box";
+        
+     //   document.getElementById('sec2').classList = "box";
+
+
+        // query selector() - it will select only the first element
+
+     //  console.log(document.querySelector('.div1'));
+     //  console.log(document.querySelector('#sec1'));
+      // console.log(document.querySelector('nav'));
+
+     //  document.querySelector('.div1').style.background = "aqua";
+
+
+
+       // query selectorAll() - it will select all the elements
+
+       console.log(document.querySelectorAll(".div1"));
+
+       document.querySelectorAll('.div1')[0].style.background = "aqua";
+       document.querySelectorAll('.div1')[1].style.background = "aqua";
+
+       const element = document.querySelectorAll(".div1");
+
+       for(let i=0; i<element.length; i++) {
+        element[i].style.color = "black";
+        element[i].style.background = "aqua";
+       }
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
+    </script>
+    
+
+
+
+
+
+
+
+
+
+    
+    
+</body>
+</html>

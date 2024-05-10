@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Basics Document</title>
+</head>
+<body>
+    
+    <button id="b1" onclick="document.body.style.backgroundColor='blue'">Change backgroundColor</button> <br> 
+    <br>
+    
+    <br>
+    <button id="b3">change background</button> <br>
+    <br>
+    <button id="b4">change background</button> <br>
+    <br>
+    <button id="b5">change background</button> <br>
+    <br>
+    <button id="b6">change background</button> <br>
+
+    <script>
+
+        // first one is inline event handler
+        
+
+        let btn = document.getElementById("b3") //using event properties in javascript - anonymous function
+        btn.onclick = function() {document.body.style.backgroundColor = 'green'};
+
+
+        let butn = document.getElementById("b4") //using event properties in javascript - named function
+        butn.onclick = change;
+        function change() {
+            document.body.style.backgroundColor = "pink"
+            
+        }
+
+
+        let buttn = document.getElementById("b5") //using addeventlistener(event, function) method
+        buttn.addEventListener("click", clicked)
+        function clicked() {
+            document.body.style.backgroundColor = "aqua"
+        }
+
+        let buton = document.getElementById("b6") //using addeventlistener - anonymous function
+        buton.addEventListener("click", function() { document.body.style.backgroundColor = "red"})
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

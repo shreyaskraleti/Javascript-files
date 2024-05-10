@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While loop Document</title>
+</head>
+<body>
+    <select name="Date" id="Date"></select>
+    <select name="Month" id="Month"></select>
+    <select name="Year" id="Year"></select>
+    <select name="Serialnumber" id="Serialnumber"></select>
+    
+    <script>
+        var date= "<option>Date</option>";
+        var i=1;
+        while (i<=31) {
+            date+= "<option value= "+i+">"+i+"</option>";
+            i++;
+        }
+        document.getElementById("Date").innerHTML=date;
+        
+        var month= "<option>Month</option>";
+        var j=1;
+        while (j<=12) {
+            month+= "<option value= "+j+">"+j+"</option>";
+            j++;
+        }
+        document.getElementById("Month").innerHTML=month;
+        
+        var year="<option>Year</option>";
+        var k=1990;
+        while (k<=2023) {
+            year+= "<option value= "+k+">"+k+"</option>";
+            k++;
+
+        }
+        document.getElementById("Year").innerHTML=year;
+
+        var serialnumber = "<option>Serialnumber</option>";
+        var l=1;
+        while (l<=31) {
+            serialnumber+= "<option value= "+l+">"+l+"</option>";
+            l++;
+        }
+        document.getElementById("Serialnumber").innerHTML=serialnumber;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

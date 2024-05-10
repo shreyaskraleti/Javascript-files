@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="signupform.css">
+</head>
+<body>
+    <div>
+        <h2>New User Signup</h2>
+        <input type="text" id="username" name="username" placeholder="username"> 
+        <br>
+        <span class="error-msg" id="usernameError">Username must be between 5 and 12 characters</span>
+        <br>
+        <input type="text" id="email" name="email" placeholder="email">
+        <br>
+        <span class="error-msg" id="emailError">Email must be a valid address, e.g me@mydomain.com</span>
+        <br>
+        <input type="password" id="password" name="password" placeholder="password">
+        <br>
+        <span class="error-msg" id="passwordError">Password must be alphanumeric and between 8 and 20 characters</span>
+        <br>
+        <input type="text" id="telephone" name="telephone" placeholder="telephone">
+        <br>
+        <span class="error-msg" id="telephoneError">Telephone must be a valid Indian phone number (10 digits)</span>
+        <br>
+        <input type="button" name="submit" id="submit" value="Submit" onclick="signup()">
+        <p id="errmsg"></p>
+    </div>
+
+    <script>
+        function signup() {
+            const usernameInput = document.getElementById('username').value;
+            const usernameRegex = /^[A-Za-z]{5,12}$/;
+            const usernameError = document.getElementById('usernameError');
+
+            if (!usernameRegex.test(usernameInput)) {
+                usernameError.style.display = 'block';
+                document.getElementById('username').style.border = "3px solid red";
+                return;
+            } else {
+                usernameError.style.display = 'none';
+                document.getElementById('username').style.border = "3px solid green";
+            }
+
+            const emailInput = document.getElementById('email').value;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const emailError = document.getElementById('emailError');
+
+            if (!emailRegex.test(emailInput)) {
+                emailError.style.display = 'block';
+                document.getElementById('email').style.border = "3px solid red";
+                return;
+            } else {
+                emailError.style.display = 'none';
+                document.getElementById('email').style.border = "3px solid green";
+            }
+
+            const passwordInput = document.getElementById('password').value;
+            const passwordRegex = /^(?=.*[a-zA-Z])(?=.*[0-9])[a-zA-Z0-9]{8,20}$/;
+            const passwordError = document.getElementById('passwordError');
+
+            if (!passwordRegex.test(passwordInput)) {
+                passwordError.style.display = 'block';
+                document.getElementById('password').style.border = "3px solid red";
+                return;
+            } else {
+                passwordError.style.display = 'none';
+                document.getElementById('password').style.border = "3px solid green";
+            }
+
+            const telephoneInput = document.getElementById('telephone').value;
+            const telephoneRegex = /^[6-9]\d{9}$/;
+            const telephoneError = document.getElementById('telephoneError');
+
+            if (!telephoneRegex.test(telephoneInput)) {
+                telephoneError.style.display = 'block';
+                document.getElementById('telephone').style.border = "3px solid red";
+                return;
+            } else {
+                telephoneError.style.display = 'none';
+                document.getElementById('telephone').style.border = "3px solid green";
+            }
+
+            document.getElementById("errmsg").innerText = "Form submitted successfully!";
+            document.getElementById("errmsg").style.border = "2px solid green";
+        }
+    </script>
+</body>
+</html>

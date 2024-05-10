@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="aadhar">Aadhar Number:</label>
+    <input type="text" name="aadhar" id="aadhar" placeholder="Enter your AADHAR number">
+    <button onclick="validateAadhar()">Verify</button>
+
+    <script>
+
+        function validateAadhar() {
+            const aadharInput = document.getElementById('aadhar').value;
+            const aadharRegex = /^[2-9]\d{11}$/;
+
+            if(!aadharRegex.test(aadharInput)) {
+                document.getElementById('aadhar').style.border = "1px solid red";
+            } else {
+                document.getElementById('aadhar').style.border = "1px solid green";
+            }
+        }
+    </script>
+
+
+    
+</body>
+</html>

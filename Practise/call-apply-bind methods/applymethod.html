@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apply method</title>
+</head>
+<body>
+    <script>
+
+        let name = {
+            firstname: "shreya",
+            lastname: "nouduri",
+        }
+
+        let printFullName = function(hometown,state) {
+            console.log(this.firstname+ " " +this.lastname+ " " + " from " +hometown+ " " +state);
+        }
+
+       
+        printFullName.apply(name,["hyderabad","talangana"]); // apply method is almost same as call method except in apply methd we should mention functional parameters in array.
+
+        let name2 = {
+            firstname: "phani",
+            lastname: "nouduri",
+        }
+
+       
+        printFullName.apply(name2,["vizag","andhrapradesh"]); // apply method is almost same as call method except in apply methd we should mention functional parameters in array.
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

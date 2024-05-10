@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>api Document</title>
+</head>
+<body>
+    <script>
+
+        // fetching the data from the api using fetch method
+
+        // .then is a method which works as call back.
+    
+        fetch('https://jsonplaceholder.typicode.com/users')
+        .then(res=>res.json()) // first then method to collect the response
+        .then(result=>console.log(result))   // to present the data
+
+        fetch('https://jsonplaceholder.typicode.com/users')
+        .then(function(res) {
+            return res.json()
+        })
+        .then(result=>console.log(result))
+
+        fetch('https://jsonplaceholder.typicode.com/posts')
+        .then(res1=>res1.json())
+        .then(result1=>console.log(result1))
+        .catch(error=>console.log(error))
+
+        fetch('https://jsonplaceholder.typicode.com/posts/10')
+        .then(res1=>res1.json())
+        .then(result1=>console.log(result1))
+        .catch(error=>console.log(error))
+    </script>
+
+
+        <h1>API fetch example:</h1>
+        <div id="output">
+
+        </div>
+
+        <script>
+            const apiurl = 'https://jsonplaceholder.typicode.com/posts/10';
+            const result = document.getElementById('output');
+
+            fetch(apiurl)
+            .then(response=>response.json())
+            .then(data=>{
+                result.innerHTML = `
+                <h2>${data.userId}</h2>
+                <h2>${data.id}</h2>
+                <h2>${data.title}</h2>
+                <p>${data.body}</p>`;
+            })
+
+            .catch(error=> {
+                result.innerHTML = "An error occured while fetching the data";
+            })
+
+
+
+
+        </script>
+
+
+
+        
+
+
+    
+</body>
+</html>

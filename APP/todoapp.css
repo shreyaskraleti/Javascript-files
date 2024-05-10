@@ -1,0 +1,50 @@
+
+.todo-container {
+    border: 1px solid grey;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    
+}
+
+.completed {
+    text-decoration: line-through;
+    color: red;
+    
+}

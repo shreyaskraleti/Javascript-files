@@ -1,0 +1,36 @@
+
+h2 {
+    color: blue;
+    margin: 50px;
+    text-align: center;
+
+}
+
+form {
+    height: 500px;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 5px solid blue;
+    border-radius: 20px;
+}
+
+form label, input {
+    padding: 5px;
+    margin: 15px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+#submit {
+    padding: 8px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.dNone {
+    color: red;
+    display: none;
+    text-decoration: dashed;
+}

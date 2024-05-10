@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call method</title>
+</head>
+<body>
+    <script>
+        // function is created inside name
+
+       /* let name = {
+            firstname: "shreya",
+            lastname: "srinivas",
+            printFullName: function() {
+                console.log(this.firstname + "" + this.lastname);
+            }
+        }
+
+        name.printFullName();
+
+        let name2 = {
+            firstname: "phani",
+            lastname: "nouduri",
+
+        }
+
+        name.printFullName.call(name2); */ 
+
+        // when function is outside name as a variable function
+
+       /* let name = {
+            firstname: "shreya",
+            lastname: "srinivas",
+        }
+         // variable function
+         
+        let printFullName = function() {
+            console.log(this.firstname + "" + this.lastname);
+
+        }
+
+        printFullName.call(name);
+
+        let name2 = {
+            firstname: "phani",
+            lastname: "nouduri",
+        }
+
+        printFullName.call(name2); */
+
+        let name = {
+            firstname: "shreya",
+            lastname: "srinivas",
+        }
+
+        let printFullName = function(hometown,state) {
+            console.log(this.firstname + "" + this.lastname + " " + "from" + " " + hometown+ " " + state);
+        }
+
+        printFullName.call(name,"hyderabad","Telangana"); // first one is related to this keyword and second and third are related to functional parameters.
+        
+
+
+        let name2 = {
+            firstname: "phani",
+            lastname: "nouduri",
+        
+        }
+
+        printFullName.call(name2,"vizag","Andhrapradesh");  // first one is related to this keyword and second and third are related to functional parameters.
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Document</title>
+</head>
+<body>
+
+    <!--
+
+    <figure>
+        <img src="./images/sunflower.jpg" alt="sunflower">
+        <figcaption>Sunflower</figcaption>
+    </figure>
+
+-->
+
+    <script>
+
+        // generate figure tag using js
+
+        let fig = document.createElement("figure");
+        
+        
+        // creating image tag
+
+        let img = document.createElement("img");
+        
+
+        //for setting attributes
+
+        img.setAttribute("src","./images/sunflower.jpg");
+        img.setAttribute("alt","sunflower");
+
+        let figcap = document.createElement("figcaption");
+       
+     //   figcap.innerText = "Sunflower";
+
+        let text = document.createTextNode("Sunflower");
+
+        figcap.appendChild(text);
+      
+
+        fig.appendChild(img);
+        fig.appendChild(figcap);
+        console.log(fig);
+
+        document.querySelector("body").appendChild(fig);
+
+        
+
+        
+
+
+
+    </script>
+
+
+    
+</body>
+</html>
