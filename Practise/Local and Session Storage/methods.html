@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storage and Session storage</title>
+</head>
+<body>
+    <script>
+        // setItem: (key,value)
+        localStorage.setItem('username','shreya');
+        localStorage.setItem('username2','bonkers');
+        localStorage.setItem('username3','phani');
+
+        sessionStorage.setItem('userName','Shreya');
+        sessionStorage.setItem('username2','bonkers');
+        sessionStorage.setItem('username3','phani');
+
+        // getItem: (key)
+        const user = localStorage.getItem('username2');
+        console.log(user);
+        const x = localStorage.getItem('username');
+        console.log(x);
+
+        const a = sessionStorage.getItem('userName');
+        console.log(a);
+        const b = sessionStorage.getItem('username3');
+        console.log(b);
+
+        // removeItem(): (key)
+        localStorage.removeItem('username');
+        sessionStorage.removeItem('username2');
+
+        // clear():
+       // localStorage.clear();
+       // sessionStorage.clear();
+
+       // dealing with objects:
+       const username = {name:"Shreya", age:30};
+       console.log(username); // object
+
+       localStorage.setItem('user',JSON.stringify(username));
+     //  console.log(JSON.stringify(username)); // converted into string
+
+     let c = JSON.parse(localStorage.getItem('user'));
+     console.log(c); // converted back to object
+
+
+
+
+    </script>
+    
+</body>
+</html>
