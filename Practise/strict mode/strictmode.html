@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            // global strict mode
+
+            "use strict";
+
+            function myFunction() {
+                let x = 5;
+                y = 2;
+            }
+
+            myFunction();  // reference error - y is not defined as y is not declared
+
+            "use strict";
+            let c = 10;
+            d = 20;  // reference error - d is not defined
+
+            // local strict mode
+
+            function nameFunction() {
+                "use strict";
+                let a = 2;
+                b = 5;
+            }
+
+            nameFunction();  // reference error - b is not defined
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
