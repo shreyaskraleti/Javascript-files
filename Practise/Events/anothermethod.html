@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove event listener by second method</title>
+</head>
+<body>
+    
+    <button id="buttn">click</button>
+    <button class="stop">stop</button>
+
+    <script>
+        let btn = document.getElementById('buttn');
+        let stp = document.querySelector('.stop');
+
+
+        btn.onclick = test;
+
+        function test() {
+            alert("button clicked");
+        }
+
+        stp.addEventListener('click', remove);
+
+        function remove() {
+            btn.onclick = null;
+        }
+
+    </script>
+
+</body>
+</html>
+
