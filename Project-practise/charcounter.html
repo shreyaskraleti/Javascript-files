@@ -21,7 +21,12 @@
     const maxChars = 100;
 
     word.addEventListener('input', function() {
-        const textLength = this.value.length;
+        let textLength = this.value.length;
+        if (textLength>maxChars) {
+            this.value = this.value.substring(0,maxChars);
+            textLength = maxChars;
+        }
+        
         const remaining = maxChars - textLength;
         totalChars.textContent = textLength;
         remainChars.textContent = remaining;
