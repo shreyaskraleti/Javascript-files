@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+    <script>
+        class Person {
+            constructor (name, age, address) {
+                this.name = name;
+                this.age = age;
+                this.address = address;
+            }
+
+            getname() {
+                return this.name;
+            }
+
+            getage() {
+                return this.age;
+            }
+
+            getaddress() {
+                return this.address;
+            }
+
+        }
+
+        const Person1 = new Person("Bonky", 2, "Bangalore");
+        console.log(Person1);
+
+        const Person2 = new Person("Shreya", 30, "Bangalore");
+        console.log(Person2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

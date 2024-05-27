@@ -1,0 +1,46 @@
+
+h2 {
+    font-size: xx-large;
+    color: navy;
+
+}
+
+.box {
+    height: 200px;
+    width: 450px;
+    border: 2px solid white;
+    border-radius: 12px;
+    background-color: aqua;
+}
+
+#words {
+    height: 30px;
+    width: 300px;
+    border: 2px solid navy;
+    border-radius: 15px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    background-color: aquamarine;
+
+}
+
+p1 {
+    color: navy;
+    font-size: large;
+    position: relative;
+    top: 150px;
+    right: 300px;
+}
+
+p2 {
+    color: red;
+    font-size: large;
+    position: relative;
+    top: 121px;
+    left: 250px;
+}
+
+.red {
+    color: red;
+}

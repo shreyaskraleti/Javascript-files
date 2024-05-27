@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+    <link rel="stylesheet" href="file.css">
+</head>
+<body>
+    <h2>Character Counter:</h2>
+    <div class="box">
+    <input type="text" name="words" id="words" placeholder="Enter any details:">
+    <p1>Total Characters:<span id="total">0</span></p1>
+    <p2>Remaining Characters:<span id="remain">100</span></p2>
+</div>
+
+<script>
+    const word = document.getElementById("words");
+    const totalChars = document.getElementById("total");
+    const remainChars = document.getElementById("remain");
+    const maxChars = 100;
+
+    word.addEventListener('input', function() {
+        const textLength = this.value.length;
+        const remaining = maxChars-textLength;
+        totalChars.textContent = textLength;
+        remainChars.textContent = remaining;
+        if (remaining<0) {
+            remainChars.classList.add('red');
+        } else {
+            remainChars.classList.remove('red');
+        }
+        
+
+    });
+    
+
+</script>
+    
+</body>
+</html>
