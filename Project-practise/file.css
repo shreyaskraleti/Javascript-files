@@ -11,34 +11,31 @@ h2 {
     border: 2px solid white;
     border-radius: 12px;
     background-color: aqua;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 #words {
     height: 30px;
     width: 300px;
-    border: 2px solid navy;
+    border: 2px solid black;
     border-radius: 15px;
-    position: relative;
-    top: 50px;
-    left: 50px;
     background-color: aquamarine;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
 
 }
 
-p1 {
+.ttl, .rmn {
     color: navy;
     font-size: large;
-    position: relative;
-    top: 150px;
-    right: 300px;
+    display: flex;
+    margin-top: 10px;
 }
 
-p2 {
+.rmn {
     color: red;
-    font-size: large;
-    position: relative;
-    top: 121px;
-    left: 250px;
 }
 
 .red {

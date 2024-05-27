@@ -10,8 +10,8 @@
     <h2>Character Counter:</h2>
     <div class="box">
     <input type="text" name="words" id="words" placeholder="Enter any details:">
-    <p1>Total Characters:<span id="total">0</span></p1>
-    <p2>Remaining Characters:<span id="remain">100</span></p2>
+    <p class="ttl">Total Characters: <span id="total">0</span></p>
+    <p class="rmn">Remaining Characters: <span id="remain">100</span></p>
 </div>
 
 <script>
@@ -22,10 +22,11 @@
 
     word.addEventListener('input', function() {
         const textLength = this.value.length;
-        const remaining = maxChars-textLength;
+        const remaining = maxChars - textLength;
         totalChars.textContent = textLength;
         remainChars.textContent = remaining;
-        if (remaining<0) {
+
+        if (remaining < 0) {
             remainChars.classList.add('red');
         } else {
             remainChars.classList.remove('red');
