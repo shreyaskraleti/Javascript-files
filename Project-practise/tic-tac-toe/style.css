@@ -56,14 +56,27 @@ body {
     box-shadow: 2px 5px 5px #000;
 }
 
+.container.success  .box {
+    cursor: not-allowed;
+}
+
 .modal {
-    display: none;
     position: absolute;
     width: 650px;
     height: 400px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 5px 10px 10px #000;
+    opacity: 0;
+    transform: translateX(500%);
+    transition: all 0.8s ease-in;
+
+
+}
+
+.container.success  .modal {
+    opacity: 1;
+    transform: translateX(0);
 
 }
 
@@ -75,7 +88,7 @@ body {
     height: 100%;
 }
 
-content h2 {
+.content h2 {
     font-size: x-large;
 }
 
@@ -92,4 +105,8 @@ button {
     background-color: var(--orangeColor);
     color: var(--darkColor);
     font-weight: 600;
+}
+
+button:active {
+    transform: scale(0.98);
 }
