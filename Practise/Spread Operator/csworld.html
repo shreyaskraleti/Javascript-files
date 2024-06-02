@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+<body>
+
+    <script>
+        //spread operator - it takes an iterable and expands or separates each element of iterable.
+        //it is used to copy an array or object.
+        //it is used to merge two or more arrays or objects.
+        //it is used to pass an array as arguments to a function.
+        
+     var arr = [10, 20, 30, 40, 50];
+     console.log(arr);
+     console.log(...arr);
+
+     var a = [1,2,3,4,5];
+     var b = [6,7,...a];
+     console.log(b);
+
+     var c = [10,11,12];
+     var d = [...c, 13,14,15];
+     console.log(d);
+
+     var str = "bonkers";
+     console.log(...str);
+
+     var arr1 = [2,3,4,5];
+     var arr2 = [6,7,8,9];
+     var arr3 = [...arr1, ...arr2];
+     console.log(arr3);
+
+     var arr4 = [2,3,4,5];
+     var arr5 = [6,7,8,9];
+     var arr6 = [10, 20, ...arr1, 30, 40, ...arr2, 90, 100];
+     console.log(arr6);
+
+     function add(a,b,c) {
+        console.log(a+b+c);
+     }
+     add(...c);
+
+     function sum(w,x,y,z) {
+        console.log(w+x+y+z);
+     }
+     sum(...arr4);
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
