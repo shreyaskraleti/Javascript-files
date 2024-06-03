@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currying</title>
+</head>
+<body>
+    <script>
+
+    //currying: means converting a function that takes n arguments into n functions that each take a single argument and return a function of one argument or result in case of last function.
+        
+      /*  function sum(a,b,c) {
+            return a+b+c;
+        }
+        console.log(sum(2,3,4));
+
+        function addCurrying(a) {
+            return function(b) {
+                return function(c) {
+                    return a+b+c;
+                }
+            }
+        }
+
+        console.log(addCurrying(2)(3)(4)); */
+
+        function mulCurrying(a) {
+            return function(b) {
+                return a*b;
+            }
+        }
+
+      console.log(mulCurrying(2)(3));
+
+      // assigning to a variable
+       // let mulfive = mulCurrying(5);
+      //  console.log(mulfive(6));
+      //  console.log(mulfive(7));
+
+      function addCurrying(a) {
+        return function(b) {
+            return a+b;
+        }
+      }
+
+      let addfive = addCurrying(5);
+      console.log(addfive(3));
+      console.log(addfive(7));
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
