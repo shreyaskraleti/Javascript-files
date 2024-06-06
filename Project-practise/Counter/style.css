@@ -1,0 +1,36 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: palevioletred;
+    font-family: 'Times New Roman', Times, serif
+    
+}
+
+.counter-container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid pink;
+    border-radius: 10px;
+    background-color: pink;
+    height: 200px;
+    width: 300px;
+
+}
+
+#clickBtn {
+    padding: 10px 20px;
+    background-color: lightcoral;
+    color: black;
+    border: 2px solid lightcoral;
+    border-radius: 10px;
+    font-size: larger;
+    height: 50px;
+    cursor: pointer;
+}
+
+#clickBtn:hover {
+    background-color: purple;
+}
