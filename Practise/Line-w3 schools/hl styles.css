@@ -1,0 +1,16 @@
+
+.hl {
+    height: 30px;
+    width: 350px;
+    background-color: yellow;
+    border: 5px dashed blue;
+}
+
+.hl2 {
+    height: 30px;
+    width: 350px;
+    background-color: red;
+    border: 8px dotted black;
+    margin: 20px;
+
+}
