@@ -1,0 +1,16 @@
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: medium;
+    margin: 30px;
+}
+
+#myDiv {
+    color: black;
+    font-size: large;
+
+
+}
