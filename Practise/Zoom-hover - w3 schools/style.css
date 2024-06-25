@@ -1,0 +1,26 @@
+
+h2 {
+
+    color: black;
+}
+
+p {
+    color: black;
+}
+
+.zoombox {
+    background-color: orangered;
+    padding: 50px;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    transition-delay: 1ms;
+    transition-duration: 1s;
+   
+    
+
+}
+
+.zoombox:hover {
+    transform: scale(1.5);
+}
