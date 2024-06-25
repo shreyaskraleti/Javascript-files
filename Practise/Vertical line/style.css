@@ -1,0 +1,8 @@
+.vl {
+    height: 300px;
+    background-color: green;
+    border: 1px solid green;
+    width: 10px;
+    position: relative;
+    left: 10%;
+}
